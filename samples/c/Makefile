@@ -21,7 +21,8 @@ install: iot
 	install iot $(DIR)/iot
 	install iotGetDeviceID.sh $(DIR)/iotGetDeviceID.sh
 	cp README.md $(DIR)/README
-	cp IoTFoundation.pem $(DIR)/IoTFoundation.pem
+	#cp IoTFoundation.pem $(DIR)/IoTFoundation.pem
+	cp RapidSSL_CA_bundle.pem $(DIR)/RapidSSL_CA_bundle.pem
 	cp etc/QuickStart.html.template $(CFGDIR)/QuickStart.html.template
 	cp etc/iotsample-odroid /etc/init.d/iotsample-odroid
 	update-rc.d iotsample-odroid defaults 90
