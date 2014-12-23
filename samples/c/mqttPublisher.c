@@ -116,7 +116,7 @@ int subscribeMessage(void *context, char *topicName, int topicLen,
 		MQTTAsync_message *message) {
 	int i;
 	char* payloadptr;
-	char* command;
+	char command[32];
 	int time_delay = 0;
 
 	payloadptr = message->payload;
